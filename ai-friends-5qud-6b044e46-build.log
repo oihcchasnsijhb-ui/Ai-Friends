@@ -1,0 +1,141 @@
+build-image version: cdb71eab71173d28b26d5f9d68e802b5745d1a21 (noble-new-builds)
+buildbot version: 29bb0864b7bf63bfd9133923f608e3f64fb64f1c
+Fetching cached dependencies
+Failed to fetch cache, continuing with build
+Starting to prepare the repo for build
+No cached dependencies found. Cloning fresh repo
+git clone --filter=blob:none https://github.com/oihcchasnsijhb-ui/Ai-Friends
+Preparing Git Reference refs/heads/main
+Installing dependencies
+mise by @jdx – installing 1 tool
+mise ⇢ python@3.14.3  615ms · already installed
+mise ████████████████ 1/1 · installed 0 tools · 1 already installed in 616ms
+mise ~/.config/mise/config.toml tools: python@3.14.3
+mise by @jdx – installing 1 tool
+mise ⇢ ruby@3.4.13  50ms · already installed
+mise ████████████████ 1/1 · installed 0 tools · 1 already installed in 51ms
+mise ~/.config/mise/config.toml tools: ruby@3.4.13
+mise by @jdx – installing 1 tool
+mise ⇢ go@1.26.2  35ms · already installed
+mise ████████████████ 1/1 · installed 0 tools · 1 already installed in 36ms
+mise ~/.config/mise/config.toml tools: go@1.26.2
+v24.22.3 is already installed.
+Now using node v24.22.3 (npm v11.19.1)
+Enabling Node.js Corepack
+mise by @jdx – installing 1 tool
+mise ⇢ bun@1.3.12  31ms · already installed
+mise ████████████████ 1/1 · installed 0 tools · 1 already installed in 32ms
+mise ~/.config/mise/config.toml tools: bun@1.3.12
+Installing npm packages using bun version 1.3.12
+bun install v1.3.12 (700fc117)
+2 |   "lockfileVersion": 2,
+                         ^
+error: Unknown lockfile version
+    at bun.lock:2:22
+UnknownLockfileVersion: failed to parse lockfile: 'bun.lock'
+warn: Ignoring lockfile
+Resolving dependencies
+Resolved, downloaded and extracted [906]
+Saved lockfile
++ @types/express@4.17.25 (v5.0.6 available)
++ @types/node@22.20.5 (v26.6.6 available)
++ @types/react@19.3.0
++ @types/react-dom@19.3.0
++ autoprefixer@10.7.0
++ esbuild@0.25.12 (v0.28.2 available)
++ tailwindcss@4.3.5
++ tsx@4.23.15
++ typescript@7.0.2
++ @google/genai@3.6.1
++ @tailwindcss/vite@4.3.5
++ @types/ws@8.18.2
++ @vitejs/plugin-react@6.3.0
++ dotenv@17.4.2 (v18.0.10 available)
++ express@4.22.3 (v5.3.0 available)
++ lucide-react@0.546.0 (v1.78.0 available)
++ motion@12.43.0 (v14.14.0 available)
++ react@19.3.1
++ react-dom@19.3.1
++ vite@8.3.8
++ ws@8.23.0
+184 packages installed [964.00ms]
+Blocked 1 postinstall. Run `bun pm untrusted` for details.
+npm packages installed using bun
+Successfully installed dependencies
+Detected 1 framework(s)
+"vite" at version "8.3.8"
+Starting build script
+Section completed: initializing
+​
+Netlify Build                                                 
+────────────────────────────────────────────────────────────────
+​
+❯ Version
+  @netlify/build 37.7.6
+​
+❯ Flags
+  accountId: 6b0433584599b519cf1067e3
+  baseRelDir: true
+  buildId: 6b044e46a160ef56293959a0
+  deployId: 6b044e46a160ef56293959a2
+  serverDistDir: /tmp/server-6b044e46a160ef56293959a2
+​
+❯ Current directory
+  /opt/build/repo
+​
+❯ Config file
+  No config file was defined: using default values.
+​
+❯ Context
+  production
+​
+Build command from Netlify app                                
+────────────────────────────────────────────────────────────────
+​
+$ bun run build
+$ vite build && esbuild server.ts --bundle --platform=node --format=esm --packages=external --outfile=dist-server.mjs
+(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - `__dirname` (vite.config.ts:22:40). Use `import.meta.dirname` instead
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.
+vite v8.3.8 building client environment for production...
+transforming...
+Starting post processing
+Skipping form detection
+Post processing - header rules
+Post processing - redirect rules
+Post processing done
+Section completed: postprocessing
+✓ 1669 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   1.50 kB │ gzip:  0.74 kB
+dist/assets/index-9gssqQPu.css   38.64 kB │ gzip:  6.89 kB
+dist/assets/index-DUH_nTtf.js   308.86 kB │ gzip: 88.67 kB
+✓ built in 323ms
+  dist-server.mjs  89.9kb
+⚡ Done in 6ms
+​
+(build.command completed in 643ms)
+​
+Deploy site                                                   
+────────────────────────────────────────────────────────────────
+​
+Starting to deploy site from 'dist'
+Calculating files to upload
+6 new file(s) to upload
+0 new function(s) to upload
+Section completed: deploying
+Site deploy was successfully initiated
+​
+(Deploy site completed in 316ms)
+​
+Netlify Build Complete                                        
+────────────────────────────────────────────────────────────────
+​
+(Netlify Build completed in 1s)
+Caching artifacts
+Section completed: building
+Site is live ✨
+Uploading cache of size 61.8MB
+Section completed: cleanup
+Finished processing build request in 9.917s
