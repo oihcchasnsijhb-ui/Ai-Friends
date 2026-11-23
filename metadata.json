@@ -1,0 +1,6 @@
+{
+  "name": "DIL SE AI",
+  "description": "Your AI Friend, Always Ready to Talk. International AI Voice Companion platform with live male and female AI voices, multi-language conversations, wallet billing, and admin operations.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
